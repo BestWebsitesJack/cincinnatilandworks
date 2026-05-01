@@ -13,7 +13,7 @@ export function Footer() {
               <span className="text-orange-500 ml-2">CONCRETE</span>
             </div>
             <p className="text-sm text-zinc-400 mb-4">
-              Your trusted partner for commercial concrete solutions in the Cincinnati Tri-State area.
+              Cincinnati's trusted commercial & industrial concrete contractor serving OH, KY & IN. No residential — 100% commercial focus.
             </p>
             <div className="flex gap-4">
               <a href="#" className="text-zinc-400 hover:text-orange-500 transition-colors">
@@ -70,14 +70,14 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <a href="tel:513-555-0100" className="text-zinc-400 hover:text-orange-500 transition-colors">
-                  (513) 555-0100
+                <a href="tel:513-673-2888" className="text-zinc-400 hover:text-orange-500 transition-colors">
+                  (513) 673-2888
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <a href="mailto:info@cincinnaticoncrete.com" className="text-zinc-400 hover:text-orange-500 transition-colors">
-                  info@cincinnaticoncrete.com
+                <a href="mailto:michele@cincinnatilandworks.com" className="text-zinc-400 hover:text-orange-500 transition-colors">
+                  michele@cincinnatilandworks.com
                 </a>
               </li>
               <li className="flex items-start gap-2">
@@ -97,7 +97,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-zinc-800 mt-8 pt-8 text-center text-sm text-zinc-500">
-          <p>&copy; {new Date().getFullYear()} Cincinnati Concrete. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} © 2026 Cincinnati Landworks LLC. All rights reserved.</p>
         </div>
       </div>
     </footer>
