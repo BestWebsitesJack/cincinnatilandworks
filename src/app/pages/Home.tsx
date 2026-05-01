@@ -24,14 +24,14 @@ export function Home() {
         <div className="container mx-auto px-4 relative z-20">
           <div className="max-w-3xl text-white">
             <div className="text-orange-500 uppercase tracking-wider text-sm mb-4">
-              Commercial Concrete Specialists
+              Cincinnati's Commercial & Industrial Concrete Specialists
             </div>
             <h1 className="text-5xl md:text-7xl mb-6">
               Built to Last. <br />
-              <span className="text-orange-500">Built for Business.</span>
+              <span className="text-orange-500">Built for Business in the OH-KY-IN Tri-State Area.</span>
             </h1>
             <p className="text-xl text-zinc-300 mb-8 max-w-2xl">
-              Industrial-grade concrete solutions for warehouses, commercial buildings, and industrial facilities across the Cincinnati Tri-State area.
+              Cincinnati Landworks delivers expert commercial and industrial concrete solutions across Cincinnati, OH, Northern KY, and SE Indiana. From warehouse floors to loading docks, parking lots to concrete replacement — built right, built to last.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link 
@@ -57,11 +57,11 @@ export function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl md:text-5xl mb-2">25+</div>
+              <div className="text-4xl md:text-5xl mb-2">10+</div>
               <div className="text-orange-100">Years Experience</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl mb-2">500+</div>
+              <div className="text-4xl md:text-5xl mb-2">50+</div>
               <div className="text-orange-100">Projects Completed</div>
             </div>
             <div>
@@ -69,8 +69,8 @@ export function Home() {
               <div className="text-orange-100">Satisfaction Rate</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl mb-2">24/7</div>
-              <div className="text-orange-100">Emergency Service</div>
+              <div className="text-4xl md:text-5xl mb-2">3</div>
+              <div className="text-orange-100">States Served</div>
             </div>
           </div>
         </div>
@@ -84,10 +84,10 @@ export function Home() {
               What We Do
             </div>
             <h2 className="text-4xl md:text-5xl mb-4">
-              Commercial Concrete Services
+              Commercial & Industrial Concrete Services
             </h2>
             <p className="text-xl text-zinc-600 max-w-2xl mx-auto">
-              Specialized solutions for industrial and commercial applications
+              Specialized commercial concrete solutions for businesses across Cincinnati, OH, KY & IN
             </p>
           </div>
 
@@ -95,20 +95,20 @@ export function Home() {
             {[
               {
                 icon: <Warehouse className="w-12 h-12" />,
-                title: "Warehouse Flooring",
-                description: "Heavy-duty concrete floors designed to withstand industrial loads and constant traffic.",
+                title: "Industrial Warehouse Flooring",
+                description: "Industrial-grade concrete floors built for warehouses, manufacturing facilities, and distribution centers across the Cincinnati Tri-State area.",
                 image: "https://images.unsplash.com/photo-1772305595483-6b058aff40f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25jcmV0ZSUyMGZsb29yJTIwaW5kdXN0cmlhbCUyMGJ1aWxkaW5nfGVufDF8fHx8MTc3MzE2ODA1N3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
               },
               {
                 icon: <Building2 className="w-12 h-12" />,
-                title: "Foundation Work",
-                description: "Structural foundations and footers for commercial buildings and industrial facilities.",
+                title: "Concrete Footings & Foundations",
+                description: "Commercial concrete footings, walls, and foundations engineered for lasting structural integrity on every job.",
                 image: "https://images.unsplash.com/photo-1625337905408-7b6fe970e187?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25jcmV0ZSUyMGZvdW5kYXRpb24lMjBjb25zdHJ1Y3Rpb24lMjBzaXRlfGVufDF8fHx8MTc3MzE1MzM3Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
               },
               {
                 icon: <ShieldCheck className="w-12 h-12" />,
-                title: "Parking Structures",
-                description: "Durable parking lots and garages built to handle heavy traffic and weather.",
+                title: "Commercial Parking Lots & Pavement",
+                description: "Commercial pavement, parking lot concrete, curb and gutter, and concrete replacement for businesses across SW Ohio, Northern KY, and SE Indiana.",
                 image: "https://images.unsplash.com/photo-1762537766077-17b2c4de6d9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tZXJjaWFsJTIwYnVpbGRpbmclMjBjb25jcmV0ZSUyMGV4dGVyaW9yfGVufDF8fHx8MTc3MzE2ODA1OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
               },
             ].map((service, index) => (
@@ -162,7 +162,7 @@ export function Home() {
                 Commercial Concrete Experts
               </h2>
               <p className="text-xl text-zinc-600 mb-8">
-                With over 25 years of experience, we deliver industrial-strength concrete solutions that stand the test of time.
+                Cincinnati Landworks is a trusted commercial concrete contractor serving the Cincinnati Tri-State area. We focus exclusively on commercial and industrial concrete — no residential, just expert craftsmanship for businesses, GCs, and industrial facilities.
               </p>
               
               <div className="space-y-4 mb-8">
@@ -171,8 +171,8 @@ export function Home() {
                   "Industrial-grade materials and equipment",
                   "Fast project turnaround times",
                   "Competitive commercial pricing",
-                  "24/7 emergency repair service",
-                  "Comprehensive warranties"
+                  "Commercial concrete maintenance contracts available",
+                  "Concrete replacement & pavement restoration specialists"
                 ].map((item, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <CheckCircle2 className="w-6 h-6 text-orange-500 flex-shrink-0 mt-0.5" />
@@ -223,7 +223,7 @@ export function Home() {
             Ready to Start Your Project?
           </h2>
           <p className="text-xl text-zinc-400 mb-8 max-w-2xl mx-auto">
-            Get a free quote for your commercial concrete project. Our team is ready to help bring your vision to life.
+            Get a free estimate for your commercial or industrial concrete project in Cincinnati, OH, KY or IN. From concrete flatwork to full pavement replacement — Cincinnati Landworks is ready.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
@@ -234,10 +234,10 @@ export function Home() {
               <ArrowRight className="w-5 h-5" />
             </Link>
             <a 
-              href="tel:513-555-0100"
+              href="tel:513-673-2888"
               className="border-2 border-white hover:bg-white hover:text-zinc-900 text-white px-8 py-4 rounded text-lg inline-flex items-center justify-center transition-colors"
             >
-              Call (513) 555-0100
+              Call (513) 673-2888
             </a>
           </div>
         </div>
