@@ -27,11 +27,11 @@ export function Header() {
               Serving the Cincinnati Tri-State Area
             </div>
             <a 
-              href="tel:513-555-0100" 
+              href="tel:513-673-2888" 
               className="flex items-center gap-2 text-orange-500 hover:text-orange-400 transition-colors"
             >
               <Phone className="w-4 h-4" />
-              (513) 555-0100
+              (513) 673-2888
             </a>
           </div>
         </div>
@@ -39,8 +39,8 @@ export function Header() {
         {/* Main navigation */}
         <div className="py-4 flex items-center justify-between">
           <Link to="/" className="text-2xl tracking-tight">
-            <span className="font-semibold">CINCINNATI</span>
-            <span className="text-orange-500 ml-2">CONCRETE</span>
+            <span className="font-semibold">Cincinnati</span>
+            <span className="text-orange-500 ml-2">Landworks LLC</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -59,7 +59,7 @@ export function Header() {
               </Link>
             ))}
             <a
-              href="tel:513-555-0100"
+              href="tel:513-673-2888"
               className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded transition-colors"
             >
               Get Quote
@@ -93,11 +93,11 @@ export function Header() {
               </Link>
             ))}
             <a
-              href="tel:513-555-0100"
+              href="tel:513-673-2888"
               className="flex items-center gap-2 text-orange-500 hover:text-orange-400 py-3"
             >
               <Phone className="w-4 h-4" />
-              (513) 555-0100
+              (513) 673-2888
             </a>
           </nav>
         )}
