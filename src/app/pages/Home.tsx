@@ -17,8 +17,8 @@ export function Home() {
       <section className="relative h-[600px] md:h-[700px] flex items-center">
         <div className="absolute inset-0 bg-gradient-to-r from-zinc-900 via-zinc-900/95 to-zinc-900/70 z-10"></div>
         <ImageWithFallback
-          src="https://images.unsplash.com/photo-1772299121503-cd62a57e3a26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tZXJjaWFsJTIwY29uY3JldGUlMjBjb25zdHJ1Y3Rpb24lMjB3YXJlaG91c2V8ZW58MXx8fHwxNzczMTY4MDU3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-          alt="Commercial concrete construction"
+          src="/Commercial_Crane.png"
+          alt="Cincinnati Landworks commercial concrete pump truck pour Cincinnati OH"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="container mx-auto px-4 relative z-20">
