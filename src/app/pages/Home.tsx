@@ -150,6 +150,27 @@ export function Home() {
         </div>
       </section>
 
+{/* Before & After Slider */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <div className="text-orange-500 uppercase tracking-wider text-sm mb-2">
+              Our Work
+            </div>
+            <h2 className="text-4xl md:text-5xl mb-4">
+              Before & After
+            </h2>
+            <p className="text-xl text-zinc-600 max-w-2xl mx-auto">
+              Real commercial concrete projects across the Cincinnati Tri-State area
+            </p>
+          </div>
+          <div 
+            dangerouslySetInnerHTML={{ __html: `<script src="https://elfsightcdn.com/platform.js" async></script><div class="elfsight-app-590db583-b8ff-43a8-9ea8-79963e98e535" data-elfsight-app-lazy></div>` }} 
+          />
+        </div>
+      </section>
+      
+
       {/* Why Choose Us */}
       <section className="py-20">
         <div className="container mx-auto px-4">
