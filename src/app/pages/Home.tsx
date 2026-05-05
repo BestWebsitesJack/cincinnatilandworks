@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import { useEffect } from "react";
 import { 
   Building2, 
   Warehouse, 
@@ -10,7 +11,14 @@ import {
   CheckCircle2
 } from "lucide-react";
 
-export function Home() {
+export default function Home() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://elfsightcdn.com/platform.js";
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <div>
       {/* Hero Section */}
@@ -164,9 +172,7 @@ export function Home() {
               Real commercial concrete projects across the Cincinnati Tri-State area
             </p>
           </div>
-          <div 
-            dangerouslySetInnerHTML={{ __html: `<script src="https://elfsightcdn.com/platform.js" async></script><div class="elfsight-app-590db583-b8ff-43a8-9ea8-79963e98e535" data-elfsight-app-lazy></div>` }} 
-          />
+          <div className="elfsight-app-590db583-b8ff-43a8-9ea8-79963e98e535" data-elfsight-app-lazy></div>
         </div>
       </section>
       
@@ -250,9 +256,7 @@ export function Home() {
               Trusted by commercial and industrial businesses across Cincinnati, OH, KY & IN
             </p>
           </div>
-          <div 
-            dangerouslySetInnerHTML={{ __html: `<script src="https://elfsightcdn.com/platform.js" async></script><div class="elfsight-app-05698238-9f04-4352-a783-3f86c3552af7" data-elfsight-app-lazy></div>` }} 
-          />
+          <div className="elfsight-app-05698238-9f04-4352-a783-3f86c3552af7" data-elfsight-app-lazy></div>
         </div>
       </section>
 
