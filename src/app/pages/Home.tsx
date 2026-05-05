@@ -170,7 +170,6 @@ export function Home() {
         </div>
       </section>
       
-
       {/* Why Choose Us */}
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -234,6 +233,26 @@ export function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Google Reviews */}
+      <section className="py-20 bg-zinc-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <div className="text-orange-500 uppercase tracking-wider text-sm mb-2">
+              What Our Clients Say
+            </div>
+            <h2 className="text-4xl md:text-5xl mb-4">
+              Google Reviews
+            </h2>
+            <p className="text-xl text-zinc-600 max-w-2xl mx-auto">
+              Trusted by commercial and industrial businesses across Cincinnati, OH, KY & IN
+            </p>
+          </div>
+          <div 
+            dangerouslySetInnerHTML={{ __html: `<script src="https://elfsightcdn.com/platform.js" async></script><div class="elfsight-app-05698238-9f04-4352-a783-3f86c3552af7" data-elfsight-app-lazy></div>` }} 
+          />
         </div>
       </section>
 
