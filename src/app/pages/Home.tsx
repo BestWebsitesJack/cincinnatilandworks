@@ -11,7 +11,7 @@ import {
   CheckCircle2
 } from "lucide-react";
 
-export default function Home() {
+export function Home() {
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://elfsightcdn.com/platform.js";
