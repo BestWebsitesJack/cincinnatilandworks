@@ -64,7 +64,7 @@ export function Contact() {
               <div>
                 <h2 className="text-3xl mb-6">Contact Information</h2>
                 <div className="space-y-4">
-                  
+                  <a
                     href="tel:5136732888"
                     className="flex items-start gap-4 p-4 bg-white rounded-lg hover:shadow-md transition-shadow group"
                   >
@@ -77,7 +77,7 @@ export function Contact() {
                     </div>
                   </a>
 
-                  
+                  <a
                     href="mailto:Cincinnatilandworks@gmail.com"
                     className="flex items-start gap-4 p-4 bg-white rounded-lg hover:shadow-md transition-shadow group"
                   >
@@ -119,7 +119,7 @@ export function Contact() {
                 <p className="text-zinc-400 mb-4">
                   Serving commercial and industrial clients across Hamilton County OH, Northern Kentucky, and Southeast Indiana. No residential — 100% commercial focus.
                 </p>
-                
+                <a
                   href="tel:5136732888"
                   className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded inline-flex items-center gap-2 transition-colors"
                 >
