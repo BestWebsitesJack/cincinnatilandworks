@@ -32,11 +32,10 @@ export function Home() {
         <div className="container mx-auto px-4 relative z-20">
           <div className="max-w-3xl text-white">
             <div className="text-orange-500 uppercase tracking-wider text-sm mb-4">
-              Cincinnati's Commercial & Industrial Concrete Specialists
+              Serving the Cincinnati Tri-State Area — OH, KY & IN
             </div>
             <h1 className="text-5xl md:text-7xl mb-6">
-              Built to Last. <br />
-              <span className="text-orange-500">Built for Business in the OH-KY-IN Tri-State Area.</span>
+              Commercial & Industrial Concrete Contractor Cincinnati
             </h1>
             <p className="text-xl text-zinc-300 mb-8 max-w-2xl">
               Cincinnati Landworks delivers expert commercial and industrial concrete solutions across Cincinnati, OH, Northern KY, and SE Indiana. From warehouse floors to loading docks, parking lots to concrete replacement — built right, built to last.
@@ -65,16 +64,16 @@ export function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl md:text-5xl mb-2">10+</div>
+              <div className="text-4xl md:text-5xl mb-2">25+</div>
               <div className="text-orange-100">Years Experience</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl mb-2">50+</div>
+              <div className="text-4xl md:text-5xl mb-2">500+</div>
               <div className="text-orange-100">Projects Completed</div>
             </div>
             <div>
               <div className="text-4xl md:text-5xl mb-2">100%</div>
-              <div className="text-orange-100">Satisfaction Rate</div>
+              <div className="text-orange-100">Commercial Focus</div>
             </div>
             <div>
               <div className="text-4xl md:text-5xl mb-2">3</div>
@@ -105,19 +104,19 @@ export function Home() {
                 icon: <Warehouse className="w-12 h-12" />,
                 title: "Industrial Warehouse Flooring",
                 description: "Industrial-grade concrete floors built for warehouses, manufacturing facilities, and distribution centers across the Cincinnati Tri-State area.",
-                image: "https://images.unsplash.com/photo-1772305595483-6b058aff40f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25jcmV0ZSUyMGZsb29yJTIwaW5kdXN0cmlhbCUyMGJ1aWxkaW5nfGVufDF8fHx8MTc3MzE2ODA1N3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                image: "https://images.unsplash.com/photo-1772305595483-6b058aff40f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25jcmV0ZSUyMGZsb29yJTIwaW5kdXN0cmlhbCUyMGJ1aWxkaW5nfGVufDF8fHx8MTc3MzE2ODA1N3ww&ixlib=rb-4.1.0&q=80&w=1080"
               },
               {
                 icon: <Building2 className="w-12 h-12" />,
                 title: "Concrete Footings & Foundations",
                 description: "Commercial concrete footings, walls, and foundations engineered for lasting structural integrity on every job.",
-                image: "https://images.unsplash.com/photo-1625337905408-7b6fe970e187?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25jcmV0ZSUyMGZvdW5kYXRpb24lMjBjb25zdHJ1Y3Rpb24lMjBzaXRlfGVufDF8fHx8MTc3MzE1MzM3Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                image: "https://images.unsplash.com/photo-1625337905408-7b6fe970e187?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25jcmV0ZSUyMGZvdW5kYXRpb24lMjBjb25zdHJ1Y3Rpb24lMjBzaXRlfGVufDF8fHx8MTc3MzE1MzM3Mnww&ixlib=rb-4.1.0&q=80&w=1080"
               },
               {
                 icon: <ShieldCheck className="w-12 h-12" />,
                 title: "Commercial Parking Lots & Pavement",
                 description: "Commercial pavement, parking lot concrete, curb and gutter, and concrete replacement for businesses across SW Ohio, Northern KY, and SE Indiana.",
-                image: "https://images.unsplash.com/photo-1762537766077-17b2c4de6d9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tZXJjaWFsJTIwYnVpbGRpbmclMjBjb25jcmV0ZSUyMGV4dGVyaW9yfGVufDF8fHx8MTc3MzE2ODA1OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                image: "https://images.unsplash.com/photo-1762537766077-17b2c4de6d9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tZXJjaWFsJTIwYnVpbGRpbmclMjBjb25jcmV0ZSUyMGV4dGVyaW9yfGVufDF8fHx8MTc3MzE2ODA1OXww&ixlib=rb-4.1.0&q=80&w=1080"
               },
             ].map((service, index) => (
               <div key={index} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow group">
@@ -158,7 +157,7 @@ export function Home() {
         </div>
       </section>
 
-{/* Before & After Slider */}
+      {/* Before & After Slider */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -175,7 +174,7 @@ export function Home() {
           <div className="elfsight-app-590db583-b8ff-43a8-9ea8-79963e98e535" data-elfsight-app-lazy></div>
         </div>
       </section>
-      
+
       {/* Why Choose Us */}
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -190,7 +189,6 @@ export function Home() {
               <p className="text-xl text-zinc-600 mb-8">
                 Cincinnati Landworks is a trusted commercial concrete contractor serving the Cincinnati Tri-State area. We focus exclusively on commercial and industrial concrete — no residential, just expert craftsmanship for businesses, GCs, and industrial facilities.
               </p>
-              
               <div className="space-y-4 mb-8">
                 {[
                   "Licensed and fully insured contractors",
@@ -206,7 +204,6 @@ export function Home() {
                   </div>
                 ))}
               </div>
-
               <Link 
                 to="/contact"
                 className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded text-lg inline-flex items-center gap-2 transition-colors"
@@ -215,7 +212,6 @@ export function Home() {
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
-
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-zinc-900 text-white p-8 rounded-lg">
                 <Clock className="w-12 h-12 text-orange-500 mb-4" />
@@ -278,7 +274,7 @@ export function Home() {
               <ArrowRight className="w-5 h-5" />
             </Link>
             <a 
-              href="tel:513-673-2888"
+              href="tel:5136732888"
               className="border-2 border-white hover:bg-white hover:text-zinc-900 text-white px-8 py-4 rounded text-lg inline-flex items-center justify-center transition-colors"
             >
               Call (513) 673-2888
