@@ -204,7 +204,7 @@ export function Projects() {
               <ArrowRight className="w-5 h-5" />
             </Link>
             
-              <a>href="tel:5136732888"
+              <a><an              href="tel:5136732888"
               className="border-2 border-white hover:bg-white hover:text-orange-500 text-white px-8 py-4 rounded text-lg inline-flex items-center justify-center transition-colors"
             >
               Call (513) 673-2888
