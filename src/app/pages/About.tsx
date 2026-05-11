@@ -36,10 +36,10 @@ export function About() {
             </div>
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="h-80 overflow-hidden">
-                <img src="/Brandon.jpg" alt="Brandon Glassmeyер Co-Founder Cincinnati Landworks Commercial Concrete" className="w-full h-full object-cover" />
+                <img src="/Brandon.jpg" alt="Brandon Glassmeyer Co-Founder Cincinnati Landworks Commercial Concrete" className="w-full h-full object-cover" />
               </div>
               <div className="p-8">
-                <h3 className="text-3xl mb-1">Brandon Glassmeyер</h3>
+                <h3 className="text-3xl mb-1">Brandon Glassmeyer</h3>
                 <div className="text-orange-500 uppercase tracking-wider text-sm mb-4">Co-Founder</div>
                 <p className="text-zinc-600">Co-founder of Cincinnati Landworks LLC and experienced commercial concrete contractor serving businesses and industrial facilities across OH, KY & IN.</p>
               </div>
