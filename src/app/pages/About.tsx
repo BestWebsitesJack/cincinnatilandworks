@@ -26,7 +26,7 @@ export function About() {
           <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="h-[416px] overflow-hidden">
-                <img src="/Kyle.jpg" alt="Kyle Johnson Co-Founder Cincinnati Landworks Commercial Concrete" className="w-full h-full object-cover" />
+                <img src="/Kyle.jpg" alt="Kyle Johnson Co-Founder Cincinnati Landworks Commercial Concrete" className="w-full h-full object-cover object-top" />
               </div>
               <div className="p-8">
                 <h3 className="text-3xl mb-1">Kyle Johnson</h3>
