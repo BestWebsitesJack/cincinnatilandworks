@@ -25,7 +25,7 @@ export function About() {
           </div>
           <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="h-80 overflow-hidden">
+              <div className="h-[416px] overflow-hidden">
                 <img src="/Kyle.jpg" alt="Kyle Johnson Co-Founder Cincinnati Landworks Commercial Concrete" className="w-full h-full object-cover" />
               </div>
               <div className="p-8">
@@ -35,7 +35,7 @@ export function About() {
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="h-80 overflow-hidden">
+              <div className="h-[416px] overflow-hidden">
                 <img src="/Brandon.jpg" alt="Brandon Glassmeyer Co-Founder Cincinnati Landworks Commercial Concrete" className="w-full h-full object-cover" />
               </div>
               <div className="p-8">
