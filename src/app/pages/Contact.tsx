@@ -33,13 +33,13 @@ export function Contact() {
               </div>
             </a>
 
-            <a href="mailto:Cincinnatilandworks@gmail.com" className="flex items-start gap-4 p-6 bg-white rounded-lg hover:shadow-md transition-shadow group">
+            <a href="mailto:michelle@cincinnatilandworks.com" className="flex items-start gap-4 p-6 bg-white rounded-lg hover:shadow-md transition-shadow group">
               <div className="bg-orange-500 text-white p-3 rounded-lg group-hover:bg-orange-600 transition-colors">
                 <Mail className="w-6 h-6" />
               </div>
               <div>
                 <div className="text-sm text-zinc-600 mb-1">Email Us</div>
-                <div className="text-2xl">Cincinnatilandworks@gmail.com</div>
+                <div className="text-2xl">michelle@cincinnatilandworks.com</div>
                 <div className="text-sm text-zinc-500 mt-1">We respond within 24 business hours</div>
               </div>
             </a>

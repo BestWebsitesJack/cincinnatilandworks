@@ -28,7 +28,7 @@ export function Header() {
               Serving the Cincinnati Tri-State Area
             </div>
             <a 
-              href="tel:513-673-2888" 
+              href="tel:5136732888" 
               className="flex items-center gap-2 text-orange-500 hover:text-orange-400 transition-colors"
             >
               <Phone className="w-4 h-4" />
@@ -60,7 +60,7 @@ export function Header() {
               </Link>
             ))}
             <a
-              href="tel:513-673-2888"
+              href="tel:5136732888"
               className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded transition-colors"
             >
               Get Quote
@@ -94,7 +94,7 @@ export function Header() {
               </Link>
             ))}
             <a
-              href="tel:513-673-2888"
+              href="tel:5136732888"
               className="flex items-center gap-2 text-orange-500 hover:text-orange-400 py-3"
             >
               <Phone className="w-4 h-4" />
