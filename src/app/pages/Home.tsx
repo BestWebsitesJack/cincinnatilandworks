@@ -22,7 +22,7 @@ export function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-[600px] md:h-[700px] flex items-center">
+      <section className="relative h-[700px] md:h-[700px] flex items-center pt-24 md:pt-0">
         <div className="absolute inset-0 bg-gradient-to-r from-zinc-900 via-zinc-900/95 to-zinc-900/70 z-10"></div>
         <ImageWithFallback
           src="/Commercial_Crane.png"
