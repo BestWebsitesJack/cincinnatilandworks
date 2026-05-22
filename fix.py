@@ -1,11 +1,5 @@
 content = open('src/app/pages/Home.tsx').read()
-content = content.replace(
-    'from-zinc-900/80 via-zinc-900/50 to-transparent',
-    'from-zinc-900/90 via-zinc-900/70 to-zinc-900/20'
-)
-content = content.replace(
-    'className="text-xl text-zinc-300 mb-8 max-w-2xl"',
-    'className="text-xl text-zinc-300 mb-8 max-w-2xl" style={{textShadow: "1px 1px 4px rgba(0,0,0,0.9)"}}'
-)
+content = content.replace('from-zinc-900/90 via-zinc-900/70 to-zinc-900/20', 'from-zinc-900 via-zinc-900/85 to-zinc-900/40')
+content = content.replace('className="max-w-3xl text-white"', 'className="max-w-3xl text-white bg-zinc-900/50 p-8 rounded-lg backdrop-blur-sm"')
 open('src/app/pages/Home.tsx', 'w').write(content)
 print("Done")
