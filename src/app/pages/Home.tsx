@@ -23,7 +23,7 @@ export function Home() {
     <div>
       {/* Hero Section */}
       <section className="relative h-[700px] md:h-[700px] flex items-center pt-24 md:pt-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-zinc-900/70 via-zinc-900/40 to-zinc-900/10 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-zinc-900/50 via-zinc-900/20 to-zinc-900/5 z-10"></div>
         <ImageWithFallback
           src="/Commercial_Crane.png"
           alt="Cincinnati Landworks commercial concrete pump truck pour Cincinnati OH"
