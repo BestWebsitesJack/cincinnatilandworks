@@ -39,7 +39,7 @@ export function Contact() {
               </div>
               <div>
                 <div className="text-sm text-zinc-600 mb-1">Email Us</div>
-                <div className="text-2xl">kyle@cincinnatilandworks.com/div>
+                <div className="text-2xl">kyle@cincinnatilandworks.com</div>
                 <div className="text-sm text-zinc-500 mt-1">We respond within 24 business hours</div>
               </div>
             </a>
