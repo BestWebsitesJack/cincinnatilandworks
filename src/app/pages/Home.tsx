@@ -36,7 +36,7 @@ export function Home() {
             <h1 className="text-5xl md:text-7xl mb-6">
               Commercial & Industrial Concrete Contractor Cincinnati
             </h1>
-            <p className="text-xl text-zinc-300 mb-8 max-w-2xl">
+            <p className="text-xl text-zinc-300 mb-8 max-w-2xl" style={{textShadow: "1px 1px 4px rgba(0,0,0,0.9)"}}>
               Cincinnati Landworks delivers expert commercial and industrial concrete solutions across Cincinnati, OH, Northern KY, and SE Indiana. From warehouse floors to loading docks, parking lots to concrete replacement — built right, built to last.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
