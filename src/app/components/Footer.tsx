@@ -89,7 +89,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-zinc-800 mt-8 pt-8 text-center text-sm text-zinc-500">
-          <p>&copy; {new Date().getFullYear()} Cincinnati Landworks LLC. All rights reserved. | Powered by <a href="https://www.bestwebsites.tech" className="hover:text-orange-500 transition-colors">Best Websites LLC</a></p>
+          <p>&copy; {new Date().getFullYear()} Cincinnati Landworks LLC. All rights reserved.</p><p className="mt-2">Built by <a href="https://www.bestwebsites.tech" target="_blank" rel="noopener noreferrer" className="hover:text-orange-500 transition-colors">Best Websites LLC</a></p>
         </div>
       </div>
     </footer>
