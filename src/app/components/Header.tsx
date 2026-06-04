@@ -31,11 +31,7 @@ export function Header() {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm transition-colors ${
-                  isActive(link.path)
-                    ? "font-semibold"
-                    : "text-zinc-600 hover:text-zinc-900"
-                }`}
+                className={`text-sm transition-colors ${isActive(link.path) ? "font-semibold" : "text-zinc-600 hover:text-zinc-900"}`}
                 style={isActive(link.path) ? {color: "#E8510A"} : {}}
               >
                 {link.label}
@@ -44,27 +40,16 @@ export function Header() {
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
-            
-              href="tel:5136732888"
-              className="flex items-center gap-2 text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
-            >
+            <a href="tel:5136732888" className="flex items-center gap-2 text-sm text-zinc-600 hover:text-zinc-900 transition-colors">
               <Phone className="w-4 h-4" />
               (513) 673-2888
             </a>
-            
-              href="tel:5136732888"
-              className="text-white text-sm px-4 py-2 rounded transition-colors"
-              style={{background: "#E8510A"}}
-            >
+            <a href="tel:5136732888" className="text-white text-sm px-4 py-2 rounded transition-colors" style={{background: "#E8510A"}}>
               Get Quote
             </a>
           </div>
 
-          <button
-            className="md:hidden p-2"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
+          <button className="md:hidden p-2" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label="Toggle menu">
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
@@ -84,10 +69,7 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
-            
-              href="tel:5136732888"
-              className="flex items-center gap-2 text-sm text-zinc-600 py-1"
-            >
+            <a href="tel:5136732888" className="flex items-center gap-2 text-sm text-zinc-600 py-1">
               <Phone className="w-4 h-4" />
               (513) 673-2888
             </a>
