@@ -107,7 +107,7 @@ export function Projects() {
       <section className="bg-zinc-900 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
-            <div className="text-orange-500 uppercase tracking-wider text-sm mb-4">
+            <div className="text-[#E8510A] uppercase tracking-wider text-sm mb-4">
               Who We Serve
             </div>
             <h1 className="text-5xl md:text-6xl mb-6">
@@ -126,10 +126,10 @@ export function Projects() {
           <div className="grid md:grid-cols-2 gap-8">
             {markets.map((market, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow p-8">
-                <div className="text-orange-500 mb-4">
+                <div className="text-[#E8510A] mb-4">
                   {market.icon}
                 </div>
-                <div className="text-orange-500 uppercase tracking-wider text-xs mb-2">
+                <div className="text-[#E8510A] uppercase tracking-wider text-xs mb-2">
                   {market.keywords}
                 </div>
                 <h2 className="text-3xl mb-4">{market.title}</h2>
@@ -137,14 +137,14 @@ export function Projects() {
                 <ul className="space-y-2 mb-6">
                   {market.services.map((service, sIndex) => (
                     <li key={sIndex} className="flex items-center gap-2 text-zinc-700">
-                      <div className="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-[#E8510A] rounded-full flex-shrink-0"></div>
                       {service}
                     </li>
                   ))}
                 </ul>
                 <Link
                   to="/contact"
-                  className="text-orange-500 hover:text-orange-600 inline-flex items-center gap-2 transition-colors"
+                  className="text-[#E8510A] hover:text-[#C8420A] inline-flex items-center gap-2 transition-colors"
                 >
                   Get a Free Estimate
                   <ArrowRight className="w-4 h-4" />
@@ -158,7 +158,7 @@ export function Projects() {
       {/* Service Area */}
       <section className="py-16 bg-zinc-900 text-white">
         <div className="container mx-auto px-4 text-center">
-          <div className="text-orange-500 uppercase tracking-wider text-sm mb-4">
+          <div className="text-[#E8510A] uppercase tracking-wider text-sm mb-4">
             Our Service Area
           </div>
           <h2 className="text-4xl md:text-5xl mb-6">
@@ -187,7 +187,7 @@ export function Projects() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-orange-500 text-white py-20">
+      <section className="bg-[#E8510A] text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl mb-6">
             Don't See Your Industry?
@@ -198,14 +198,14 @@ export function Projects() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="bg-white hover:bg-zinc-100 text-orange-500 px-8 py-4 rounded text-lg inline-flex items-center justify-center gap-2 transition-colors"
+              className="bg-white hover:bg-zinc-100 text-[#E8510A] px-8 py-4 rounded text-lg inline-flex items-center justify-center gap-2 transition-colors"
             >
               Request Free Estimate
               <ArrowRight className="w-5 h-5" />
             </Link>
             
               <a              href="tel:5136732888"
-              className="border-2 border-white hover:bg-white hover:text-orange-500 text-white px-8 py-4 rounded text-lg inline-flex items-center justify-center transition-colors"
+              className="border-2 border-white hover:bg-white hover:text-[#E8510A] text-white px-8 py-4 rounded text-lg inline-flex items-center justify-center transition-colors"
             >
               Call (513) 673-2888
             </a>

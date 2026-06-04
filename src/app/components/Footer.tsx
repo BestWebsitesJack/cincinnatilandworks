@@ -10,16 +10,16 @@ export function Footer() {
           <div>
             <div className="text-xl mb-4">
               <span className="font-semibold text-white">CINCINNATI</span>
-              <span className="text-orange-500 ml-2">LANDWORKS</span>
+              <span className="text-[#E8510A] ml-2">LANDWORKS</span>
             </div>
             <p className="text-sm text-zinc-400 mb-4">
               Cincinnati's trusted commercial & industrial concrete contractor serving OH, KY & IN. No residential — 100% commercial focus.
             </p>
             <div className="flex gap-4">
-              <a href="https://www.facebook.com/cincinnatilandworks/" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-orange-500 transition-colors">
+              <a href="https://www.facebook.com/cincinnatilandworks/" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-[#E8510A] transition-colors">
                 Facebook
               </a>
-              <a href="https://www.linkedin.com/in/kyle-johnson-b0a5b02b0/" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-orange-500 transition-colors">
+              <a href="https://www.linkedin.com/in/kyle-johnson-b0a5b02b0/" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-[#E8510A] transition-colors">
                 LinkedIn
               </a>
             </div>
@@ -30,19 +30,19 @@ export function Footer() {
             <h3 className="text-white font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link to="/" className="text-zinc-400 hover:text-orange-500 transition-colors">Home</Link>
+                <Link to="/" className="text-zinc-400 hover:text-[#E8510A] transition-colors">Home</Link>
               </li>
               <li>
-                <Link to="/services" className="text-zinc-400 hover:text-orange-500 transition-colors">Services</Link>
+                <Link to="/services" className="text-zinc-400 hover:text-[#E8510A] transition-colors">Services</Link>
               </li>
               <li>
-                <Link to="/projects" className="text-zinc-400 hover:text-orange-500 transition-colors">Markets We Serve</Link>
+                <Link to="/projects" className="text-zinc-400 hover:text-[#E8510A] transition-colors">Markets We Serve</Link>
               </li>
               <li>
-                <Link to="/about" className="text-zinc-400 hover:text-orange-500 transition-colors">About</Link>
+                <Link to="/about" className="text-zinc-400 hover:text-[#E8510A] transition-colors">About</Link>
               </li>
               <li>
-                <Link to="/contact" className="text-zinc-400 hover:text-orange-500 transition-colors">Contact</Link>
+                <Link to="/contact" className="text-zinc-400 hover:text-[#E8510A] transition-colors">Contact</Link>
               </li>
             </ul>
           </div>
@@ -66,13 +66,13 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <a href="tel:5136732888" className="text-zinc-400 hover:text-orange-500 transition-colors">
+                <a href="tel:5136732888" className="text-zinc-400 hover:text-[#E8510A] transition-colors">
                   (513) 673-2888
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <a href="mailto:michelle@cincinnatilandworks.com" className="text-zinc-400 hover:text-orange-500 transition-colors">
+                <a href="mailto:michelle@cincinnatilandworks.com" className="text-zinc-400 hover:text-[#E8510A] transition-colors">
                   michelle@cincinnatilandworks.com
                 </a>
               </li>
@@ -89,7 +89,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-zinc-800 mt-8 pt-8 text-center text-sm text-zinc-500">
-          <p>&copy; {new Date().getFullYear()} Cincinnati Landworks LLC. All rights reserved.</p><p className="mt-2">Built by <a href="https://www.bestwebsites.tech" target="_blank" rel="noopener noreferrer" className="hover:text-orange-500 transition-colors">Best Websites LLC</a></p>
+          <p>&copy; {new Date().getFullYear()} Cincinnati Landworks LLC. All rights reserved.</p><p className="mt-2">Built by <a href="https://www.bestwebsites.tech" target="_blank" rel="noopener noreferrer" className="hover:text-[#E8510A] transition-colors">Best Websites LLC</a></p>
         </div>
       </div>
     </footer>

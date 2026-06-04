@@ -93,7 +93,7 @@ export function Services() {
       <section className="bg-zinc-900 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
-            <div className="text-orange-500 uppercase tracking-wider text-sm mb-4">
+            <div className="text-[#E8510A] uppercase tracking-wider text-sm mb-4">
               Our Services
             </div>
             <h1 className="text-5xl md:text-6xl mb-6">
@@ -119,7 +119,7 @@ export function Services() {
               >
                 <div className={index % 2 === 1 ? 'md:order-2' : ''}>
                   <div className="bg-white p-8 rounded-lg shadow-lg">
-                    <div className="text-orange-500 mb-4">
+                    <div className="text-[#E8510A] mb-4">
                       {service.icon}
                     </div>
                     <h2 className="text-3xl md:text-4xl mb-4">{service.title}</h2>
@@ -129,14 +129,14 @@ export function Services() {
                     <ul className="space-y-3 mb-8">
                       {service.features.map((feature, fIndex) => (
                         <li key={fIndex} className="flex items-start gap-3">
-                          <CheckCircle2 className="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                          <CheckCircle2 className="w-5 h-5 text-[#E8510A] flex-shrink-0 mt-0.5" />
                           <span className="text-zinc-700">{feature}</span>
                         </li>
                       ))}
                     </ul>
                     <Link 
                       to="/contact"
-                      className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded inline-flex items-center gap-2 transition-colors"
+                      className="bg-[#E8510A] hover:bg-[#C8420A] text-white px-6 py-3 rounded inline-flex items-center gap-2 transition-colors"
                     >
                       Get Quote
                       <ArrowRight className="w-4 h-4" />
@@ -172,7 +172,7 @@ export function Services() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <div className="text-orange-500 uppercase tracking-wider text-sm mb-2">
+            <div className="text-[#E8510A] uppercase tracking-wider text-sm mb-2">
               Our Process
             </div>
             <h2 className="text-4xl md:text-5xl mb-4">
@@ -207,7 +207,7 @@ export function Services() {
               }
             ].map((item, index) => (
               <div key={index} className="text-center">
-                <div className="text-6xl text-orange-500 mb-4 opacity-30">
+                <div className="text-6xl text-[#E8510A] mb-4 opacity-30">
                   {item.step}
                 </div>
                 <h3 className="text-2xl mb-3">{item.title}</h3>
@@ -219,7 +219,7 @@ export function Services() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-orange-500 text-white py-20">
+      <section className="bg-[#E8510A] text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl mb-6">
             Need a Custom Solution?
@@ -230,14 +230,14 @@ export function Services() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               to="/contact"
-              className="bg-white hover:bg-zinc-100 text-orange-500 px-8 py-4 rounded text-lg inline-flex items-center justify-center gap-2 transition-colors"
+              className="bg-white hover:bg-zinc-100 text-[#E8510A] px-8 py-4 rounded text-lg inline-flex items-center justify-center gap-2 transition-colors"
             >
               Request Quote
               <ArrowRight className="w-5 h-5" />
             </Link>
             <a 
               href="tel:5136732888"
-              className="border-2 border-white hover:bg-white hover:text-orange-500 text-white px-8 py-4 rounded text-lg inline-flex items-center justify-center transition-colors"
+              className="border-2 border-white hover:bg-white hover:text-[#E8510A] text-white px-8 py-4 rounded text-lg inline-flex items-center justify-center transition-colors"
             >
               Call (513) 673-2888
             </a>

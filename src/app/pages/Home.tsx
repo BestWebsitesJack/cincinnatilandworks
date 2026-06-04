@@ -30,7 +30,7 @@ export function Home() {
         />
         <div className="container mx-auto px-4 relative z-20">
           <div className="max-w-3xl text-white bg-zinc-900/50 p-8 rounded-lg backdrop-blur-sm">
-            <div className="text-orange-500 uppercase tracking-wider text-sm mb-4">
+            <div className="text-[#E8510A] uppercase tracking-wider text-sm mb-4">
               Serving the Cincinnati Tri-State Area — OH, KY & IN
             </div>
             <h1 className="text-5xl md:text-7xl mb-6">
@@ -42,7 +42,7 @@ export function Home() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link 
                 to="/contact"
-                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded text-lg inline-flex items-center justify-center gap-2 transition-colors"
+                className="bg-[#E8510A] hover:bg-[#C8420A] text-white px-8 py-4 rounded text-lg inline-flex items-center justify-center gap-2 transition-colors"
               >
                 Get Free Quote
                 <ArrowRight className="w-5 h-5" />
@@ -59,7 +59,7 @@ export function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="bg-orange-500 text-white py-12">
+      <section className="bg-[#E8510A] text-white py-12">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
@@ -86,7 +86,7 @@ export function Home() {
       <section className="py-20 bg-zinc-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <div className="text-orange-500 uppercase tracking-wider text-sm mb-2">
+            <div className="text-[#E8510A] uppercase tracking-wider text-sm mb-2">
               What We Do
             </div>
             <h2 className="text-4xl md:text-5xl mb-4">
@@ -127,14 +127,14 @@ export function Home() {
                   />
                 </div>
                 <div className="p-6">
-                  <div className="text-orange-500 mb-4">
+                  <div className="text-[#E8510A] mb-4">
                     {service.icon}
                   </div>
                   <h3 className="text-2xl mb-3">{service.title}</h3>
                   <p className="text-zinc-600 mb-4">{service.description}</p>
                   <Link 
                     to="/services" 
-                    className="text-orange-500 hover:text-orange-600 inline-flex items-center gap-2 transition-colors"
+                    className="text-[#E8510A] hover:text-[#C8420A] inline-flex items-center gap-2 transition-colors"
                   >
                     Learn More
                     <ArrowRight className="w-4 h-4" />
@@ -160,7 +160,7 @@ export function Home() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <div className="text-orange-500 uppercase tracking-wider text-sm mb-2">
+            <div className="text-[#E8510A] uppercase tracking-wider text-sm mb-2">
               Our Work
             </div>
             <h2 className="text-4xl md:text-5xl mb-4">
@@ -179,7 +179,7 @@ export function Home() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="text-orange-500 uppercase tracking-wider text-sm mb-2">
+              <div className="text-[#E8510A] uppercase tracking-wider text-sm mb-2">
                 Why Choose Us
               </div>
               <h2 className="text-4xl md:text-5xl mb-6">
@@ -198,14 +198,14 @@ export function Home() {
                   "Concrete replacement & pavement restoration specialists"
                 ].map((item, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-orange-500 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-6 h-6 text-[#E8510A] flex-shrink-0 mt-0.5" />
                     <span className="text-lg">{item}</span>
                   </div>
                 ))}
               </div>
               <Link 
                 to="/contact"
-                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded text-lg inline-flex items-center gap-2 transition-colors"
+                className="bg-[#E8510A] hover:bg-[#C8420A] text-white px-8 py-4 rounded text-lg inline-flex items-center gap-2 transition-colors"
               >
                 Request Consultation
                 <ArrowRight className="w-5 h-5" />
@@ -213,22 +213,22 @@ export function Home() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-zinc-900 text-white p-8 rounded-lg">
-                <Clock className="w-12 h-12 text-orange-500 mb-4" />
+                <Clock className="w-12 h-12 text-[#E8510A] mb-4" />
                 <h3 className="text-2xl mb-2">Fast Response</h3>
                 <p className="text-zinc-400">Quick quotes and project scheduling to meet your deadlines.</p>
               </div>
-              <div className="bg-orange-500 text-white p-8 rounded-lg">
+              <div className="bg-[#E8510A] text-white p-8 rounded-lg">
                 <Award className="w-12 h-12 mb-4" />
                 <h3 className="text-2xl mb-2">Certified Team</h3>
                 <p className="text-orange-100">All our technicians are certified and highly trained.</p>
               </div>
-              <div className="bg-orange-500 text-white p-8 rounded-lg">
+              <div className="bg-[#E8510A] text-white p-8 rounded-lg">
                 <ShieldCheck className="w-12 h-12 mb-4" />
                 <h3 className="text-2xl mb-2">Quality Assured</h3>
                 <p className="text-orange-100">We stand behind every project with comprehensive warranties.</p>
               </div>
               <div className="bg-zinc-900 text-white p-8 rounded-lg">
-                <Building2 className="w-12 h-12 text-orange-500 mb-4" />
+                <Building2 className="w-12 h-12 text-[#E8510A] mb-4" />
                 <h3 className="text-2xl mb-2">Commercial Focus</h3>
                 <p className="text-zinc-400">Specialized in large-scale industrial and commercial projects.</p>
               </div>
@@ -241,7 +241,7 @@ export function Home() {
       <section className="py-20 bg-zinc-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <div className="text-orange-500 uppercase tracking-wider text-sm mb-2">
+            <div className="text-[#E8510A] uppercase tracking-wider text-sm mb-2">
               What Our Clients Say
             </div>
             <h2 className="text-4xl md:text-5xl mb-4">
@@ -267,7 +267,7 @@ export function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               to="/contact"
-              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded text-lg inline-flex items-center justify-center gap-2 transition-colors"
+              className="bg-[#E8510A] hover:bg-[#C8420A] text-white px-8 py-4 rounded text-lg inline-flex items-center justify-center gap-2 transition-colors"
             >
               Get Free Quote
               <ArrowRight className="w-5 h-5" />

@@ -6,7 +6,7 @@ export function Contact() {
       <section className="bg-zinc-900 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
-            <div className="text-orange-500 uppercase tracking-wider text-sm mb-4">
+            <div className="text-[#E8510A] uppercase tracking-wider text-sm mb-4">
               Free Estimate
             </div>
             <h1 className="text-5xl md:text-6xl mb-6">
@@ -23,7 +23,7 @@ export function Contact() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto space-y-6">
             <a href="tel:5136732888" className="flex items-start gap-4 p-6 bg-white rounded-lg hover:shadow-md transition-shadow group">
-              <div className="bg-orange-500 text-white p-3 rounded-lg group-hover:bg-orange-600 transition-colors">
+              <div className="bg-[#E8510A] text-white p-3 rounded-lg group-hover:bg-[#C8420A] transition-colors">
                 <Phone className="w-6 h-6" />
               </div>
               <div>
@@ -34,7 +34,7 @@ export function Contact() {
             </a>
 
             <a href="mailto:kyle@cincinnatilandworks.com" className="flex items-start gap-4 p-6 bg-white rounded-lg hover:shadow-md transition-shadow group">
-              <div className="bg-orange-500 text-white p-3 rounded-lg group-hover:bg-orange-600 transition-colors">
+              <div className="bg-[#E8510A] text-white p-3 rounded-lg group-hover:bg-[#C8420A] transition-colors">
                 <Mail className="w-6 h-6" />
               </div>
               <div>
@@ -45,7 +45,7 @@ export function Contact() {
             </a>
 
             <div className="flex items-start gap-4 p-6 bg-white rounded-lg">
-              <div className="bg-orange-500 text-white p-3 rounded-lg">
+              <div className="bg-[#E8510A] text-white p-3 rounded-lg">
                 <MapPin className="w-6 h-6" />
               </div>
               <div>
@@ -56,7 +56,7 @@ export function Contact() {
             </div>
 
             <div className="flex items-start gap-4 p-6 bg-white rounded-lg">
-              <div className="bg-orange-500 text-white p-3 rounded-lg">
+              <div className="bg-[#E8510A] text-white p-3 rounded-lg">
                 <Clock className="w-6 h-6" />
               </div>
               <div>
@@ -72,7 +72,7 @@ export function Contact() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <div className="text-orange-500 uppercase tracking-wider text-sm mb-2">Service Area</div>
+            <div className="text-[#E8510A] uppercase tracking-wider text-sm mb-2">Service Area</div>
             <h2 className="text-4xl md:text-5xl mb-4">Cincinnati Tri-State Coverage</h2>
             <p className="text-xl text-zinc-600 max-w-2xl mx-auto">Commercial and industrial concrete contractor serving Ohio, Kentucky, and Indiana</p>
           </div>
@@ -83,7 +83,7 @@ export function Contact() {
                 <li>Cincinnati</li><li>Reading</li><li>Mason</li><li>West Chester</li><li>Sharonville</li><li>Hamilton</li><li>Norwood</li><li>Blue Ash</li>
               </ul>
             </div>
-            <div className="bg-orange-500 text-white p-8 rounded-lg text-center">
+            <div className="bg-[#E8510A] text-white p-8 rounded-lg text-center">
               <h3 className="text-2xl mb-4">Kentucky</h3>
               <ul className="space-y-2 text-orange-100">
                 <li>Covington</li><li>Newport</li><li>Florence</li><li>Fort Thomas</li><li>Alexandria</li><li>Highland Heights</li><li>Erlanger</li><li>Boone County</li>
@@ -103,7 +103,7 @@ export function Contact() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
-              <div className="text-orange-500 uppercase tracking-wider text-sm mb-2">FAQ</div>
+              <div className="text-[#E8510A] uppercase tracking-wider text-sm mb-2">FAQ</div>
               <h2 className="text-4xl md:text-5xl mb-4">Common Questions</h2>
             </div>
             <div className="space-y-6">

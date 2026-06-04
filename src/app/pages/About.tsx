@@ -9,7 +9,7 @@ export function About() {
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/Commercial_Crane.png')" }}></div>
         <div className="container mx-auto px-4 relative z-20">
           <div className="max-w-3xl text-white">
-            <div className="text-orange-500 uppercase tracking-wider text-sm mb-4">Our Story</div>
+            <div className="text-[#E8510A] uppercase tracking-wider text-sm mb-4">Our Story</div>
             <h1 className="text-5xl md:text-6xl mb-6">About Cincinnati Landworks — Commercial Concrete Contractor</h1>
             <p className="text-xl text-zinc-300">Founded by two Cincinnati entrepreneurs who built their careers in construction and concrete, Cincinnati Landworks is 100% focused on commercial and industrial concrete across OH, KY & IN.</p>
           </div>
@@ -19,7 +19,7 @@ export function About() {
       <section className="py-20 bg-zinc-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <div className="text-orange-500 uppercase tracking-wider text-sm mb-2">The Team</div>
+            <div className="text-[#E8510A] uppercase tracking-wider text-sm mb-2">The Team</div>
             <h2 className="text-4xl md:text-5xl mb-4">Meet Kyle & Brandon</h2>
             <p className="text-xl text-zinc-600 max-w-3xl mx-auto">Two Cincinnati-area entrepreneurs who turned construction industry experience into a commercial concrete company built to last.</p>
           </div>
@@ -30,7 +30,7 @@ export function About() {
               </div>
               <div className="p-8">
                 <h3 className="text-3xl mb-1">Kyle Johnson</h3>
-                <div className="text-orange-500 uppercase tracking-wider text-sm mb-4">Co-Founder</div>
+                <div className="text-[#E8510A] uppercase tracking-wider text-sm mb-4">Co-Founder</div>
                 <p className="text-zinc-600">Commercial concrete contractor and co-founder of Cincinnati Landworks LLC, serving the Cincinnati Tri-State area with expert commercial and industrial concrete solutions.</p>
               </div>
             </div>
@@ -40,7 +40,7 @@ export function About() {
               </div>
               <div className="p-8">
                 <h3 className="text-3xl mb-1">Brandon Glassmeyer</h3>
-                <div className="text-orange-500 uppercase tracking-wider text-sm mb-4">Co-Founder</div>
+                <div className="text-[#E8510A] uppercase tracking-wider text-sm mb-4">Co-Founder</div>
                 <p className="text-zinc-600">Co-founder of Cincinnati Landworks LLC and experienced commercial concrete contractor serving businesses and industrial facilities across OH, KY & IN.</p>
               </div>
             </div>
@@ -51,7 +51,7 @@ export function About() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <div className="text-orange-500 uppercase tracking-wider text-sm mb-4 text-center">Our Journey</div>
+            <div className="text-[#E8510A] uppercase tracking-wider text-sm mb-4 text-center">Our Journey</div>
             <h2 className="text-4xl md:text-5xl mb-8 text-center">How Cincinnati Landworks Was Built</h2>
             <div className="space-y-6 text-zinc-600 text-lg">
               <p>In our earlier years, both of us embarked on entrepreneurial endeavors with landscaping companies. Despite our dedication, we recognized the limitations of our small-scale operations as we matured. Rising equipment costs and increasing overheads posed significant challenges to sustaining our businesses. Consequently, we made the decision to sell our respective companies and transitioned into roles within the construction industry — where we both found a passion for commercial concrete work across the Cincinnati Tri-State area. However, the desire for greater autonomy and the pursuit of loftier ambitions continued to drive us.</p>
@@ -66,7 +66,7 @@ export function About() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <div className="text-orange-500 uppercase tracking-wider text-sm mb-4">Our Focus</div>
+              <div className="text-[#E8510A] uppercase tracking-wider text-sm mb-4">Our Focus</div>
               <h2 className="text-4xl md:text-5xl mb-6">100% Commercial & Industrial Concrete</h2>
               <p className="text-xl text-zinc-400">We made a deliberate choice to focus exclusively on commercial and industrial concrete. No residential — just expert craftsmanship for businesses, GCs, and industrial facilities across Cincinnati OH, KY & IN.</p>
             </div>
@@ -82,7 +82,7 @@ export function About() {
                 "Commercial pavement & concrete replacement"
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-orange-500 flex-shrink-0" />
+                  <CheckCircle2 className="w-5 h-5 text-[#E8510A] flex-shrink-0" />
                   <span className="text-zinc-300">{item}</span>
                 </div>
               ))}
@@ -91,16 +91,16 @@ export function About() {
         </div>
       </section>
 
-      <section className="bg-orange-500 text-white py-20">
+      <section className="bg-[#E8510A] text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl mb-6">Ready to Work With Us?</h2>
           <p className="text-xl text-orange-100 mb-8 max-w-2xl mx-auto">Contact Cincinnati Landworks for a free estimate on your commercial or industrial concrete project in the Cincinnati Tri-State area.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact" className="bg-white hover:bg-zinc-100 text-orange-500 px-8 py-4 rounded text-lg inline-flex items-center justify-center gap-2 transition-colors">
+            <Link to="/contact" className="bg-white hover:bg-zinc-100 text-[#E8510A] px-8 py-4 rounded text-lg inline-flex items-center justify-center gap-2 transition-colors">
               Get Free Estimate
               <ArrowRight className="w-5 h-5" />
             </Link>
-            <a href="tel:5136732888" className="border-2 border-white hover:bg-white hover:text-orange-500 text-white px-8 py-4 rounded text-lg inline-flex items-center justify-center transition-colors">
+            <a href="tel:5136732888" className="border-2 border-white hover:bg-white hover:text-[#E8510A] text-white px-8 py-4 rounded text-lg inline-flex items-center justify-center transition-colors">
               Call (513) 673-2888
             </a>
           </div>
