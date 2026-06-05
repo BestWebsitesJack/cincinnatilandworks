@@ -24,8 +24,8 @@ export function Home() {
       {/* Hero Section */}
       <section className="relative h-[700px] md:h-[700px] flex items-center pt-24 md:pt-0">
         <ImageWithFallback
-          src="/Commercial_Crane.png"
-          alt="Cincinnati Landworks commercial concrete pump truck pour Cincinnati OH"
+          src="/kroger.JPG"
+          alt="Cincinnati Landworks commercial concrete parking lot and sidewalk Kroger Marketplace Cincinnati OH"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="container mx-auto px-4 relative z-20">
