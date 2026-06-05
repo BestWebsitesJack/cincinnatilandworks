@@ -3,20 +3,14 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 export function Contact() {
   return (
     <div>
-      <section className="relative py-32 flex items-center">
-        <div className="absolute inset-0 bg-gradient-to-r from-zinc-900/75 via-zinc-900/50 to-zinc-900/10 z-10"></div>
+      <section className="relative h-[400px] flex items-center">
+        <div className="absolute inset-0 z-10" style={{background: "rgba(0,0,0,0.65)"}}></div>
         <div className="absolute inset-0 bg-cover bg-center" style={{backgroundImage: "url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1920&q=80')"}}></div>
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl bg-zinc-900/75 p-8 rounded-lg text-white">
-            <div className="text-[#E8510A] uppercase tracking-wider text-sm mb-4">
-              Free Estimate
-            </div>
-            <h1 className="text-5xl md:text-6xl mb-6 text-white font-bold">
-              Contact Cincinnati Landworks
-            </h1>
-            <p className="text-xl text-zinc-300">
-              Request a free estimate for your commercial or industrial concrete project in Cincinnati, OH, Northern KY, or SE Indiana. Call or email us directly.
-            </p>
+        <div className="container mx-auto px-4 relative z-20">
+          <div className="max-w-3xl">
+            <div style={{color: "#E8510A"}} className="uppercase tracking-wider text-sm mb-4">Free Estimate</div>
+            <h1 className="text-5xl md:text-6xl mb-6" style={{color: "#ffffff"}}>Contact Cincinnati Landworks</h1>
+            <p className="text-xl" style={{color: "#e0e0e0"}}>Request a free estimate for your commercial or industrial concrete project in Cincinnati, OH, Northern KY, or SE Indiana. Call or email us directly.</p>
           </div>
         </div>
       </section>

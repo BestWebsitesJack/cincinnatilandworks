@@ -90,20 +90,14 @@ export function Services() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative py-32 flex items-center">
-        <div className="absolute inset-0 bg-gradient-to-r from-zinc-900/75 via-zinc-900/50 to-zinc-900/10 z-10"></div>
+      <section className="relative h-[400px] flex items-center">
+        <div className="absolute inset-0 z-10" style={{background: "rgba(0,0,0,0.65)"}}></div>
         <div className="absolute inset-0 bg-cover bg-center" style={{backgroundImage: "url('/services-hero.png')"}}></div>
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl bg-zinc-900/75 p-8 rounded-lg text-white">
-            <div className="text-[#E8510A] uppercase tracking-wider text-sm mb-4">
-              Our Services
-            </div>
-            <h1 className="text-5xl md:text-6xl mb-6 text-white font-bold">
-              Commercial & Industrial Concrete Services in Cincinnati
-            </h1>
-            <p className="text-xl text-zinc-300">
-              Cincinnati Landworks provides expert commercial and industrial concrete services across Cincinnati, OH, Northern KY, and SE Indiana. From concrete flatwork and loading docks to parking lot replacement and drainage — 100% commercial focus.
-            </p>
+        <div className="container mx-auto px-4 relative z-20">
+          <div className="max-w-3xl">
+            <div style={{color: "#E8510A"}} className="uppercase tracking-wider text-sm mb-4">Our Services</div>
+            <h1 className="text-5xl md:text-6xl mb-6" style={{color: "#ffffff"}}>Commercial & Industrial Concrete Services in Cincinnati</h1>
+            <p className="text-xl" style={{color: "#e0e0e0"}}>Cincinnati Landworks provides expert commercial and industrial concrete services across Cincinnati, OH, Northern KY, and SE Indiana. From concrete flatwork and loading docks to parking lot replacement and drainage — 100% commercial focus.</p>
           </div>
         </div>
       </section>
