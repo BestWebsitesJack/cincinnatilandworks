@@ -1,7 +1,12 @@
-content = open('src/app/pages/Home.tsx').read()
+content = open('index.html').read()
+favicon_tags = '''    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">'''
 content = content.replace(
-    'className="max-w-3xl text-white bg-zinc-900/50 p-8 rounded-lg backdrop-blur-sm"',
-    'className="max-w-lg text-white bg-zinc-900/50 p-6 rounded-lg backdrop-blur-sm"'
+    '<link rel="canonical" href="https://www.cincinnatilandworks.com/" />',
+    '<link rel="canonical" href="https://www.cincinnatilandworks.com/" />\n' + favicon_tags
 )
-open('src/app/pages/Home.tsx', 'w').write(content)
+open('index.html', 'w').write(content)
 print("Done")
