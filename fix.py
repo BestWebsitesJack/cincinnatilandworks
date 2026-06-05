@@ -1,7 +1,7 @@
 content = open('src/app/pages/Home.tsx').read()
 content = content.replace(
-    'src="/kroger.JPG" alt="Cincinnati Landworks commercial concrete parking lot and sidewalk Kroger Marketplace Cincinnati OH" className="absolute inset-0 w-full h-full object-cover"',
-    'src="/kroger.JPG" alt="Cincinnati Landworks commercial concrete parking lot and sidewalk Kroger Marketplace Cincinnati OH" className="absolute inset-0 w-full h-full object-cover" style={{objectPosition: "center bottom"}}'
+    'className="max-w-3xl text-white bg-zinc-900/50 p-8 rounded-lg backdrop-blur-sm"',
+    'className="max-w-lg text-white bg-zinc-900/50 p-6 rounded-lg backdrop-blur-sm"'
 )
 open('src/app/pages/Home.tsx', 'w').write(content)
 print("Done")
