@@ -90,7 +90,9 @@ export function Services() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-zinc-900 text-white py-20">
+      <section className="relative py-32 flex items-center">
+        <div className="absolute inset-0 bg-gradient-to-r from-zinc-900/90 via-zinc-900/70 to-zinc-900/20 z-10"></div>
+        <div className="absolute inset-0 bg-cover bg-center" style={{backgroundImage: "url('/services-hero.png')"}}></div>
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
             <div className="text-[#E8510A] uppercase tracking-wider text-sm mb-4">
