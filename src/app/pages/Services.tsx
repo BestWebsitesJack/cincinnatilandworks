@@ -35,7 +35,7 @@ export function Services() {
         "Proper drainage integration",
         "Load-bearing calculations"
       ],
-      image: "/concretefoundations.jpg"
+      image: "/Concretefoundations.png"
     },
     {
       icon: <Truck className="w-12 h-12" />,
@@ -59,7 +59,7 @@ export function Services() {
         "Surface restoration",
         "Commercial concrete maintenance contracts available"
       ],
-      image: "/Maintenance.jpg"
+      image: "/Maintenance.jpeg"
     },
     {
       icon: <Shield className="w-12 h-12" />,
@@ -71,7 +71,7 @@ export function Services() {
         "Slip-resistant finishes",
         "Concrete flatwork contractor Cincinnati OH, KY & IN"
       ],
-      image: "/sidewalk.jpg"
+      image: "/sidewalk.JPG"
     },
     {
       icon: <Zap className="w-12 h-12" />,
