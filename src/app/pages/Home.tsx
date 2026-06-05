@@ -103,19 +103,19 @@ export function Home() {
                 icon: <Warehouse className="w-12 h-12" />,
                 title: "Industrial Warehouse Flooring",
                 description: "Industrial-grade concrete floors built for warehouses, manufacturing facilities, and distribution centers across the Cincinnati Tri-State area.",
-                image: "https://images.unsplash.com/photo-1772305595483-6b058aff40f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25jcmV0ZSUyMGZsb29yJTIwaW5kdXN0cmlhbCUyMGJ1aWxkaW5nfGVufDF8fHx8MTc3MzE2ODA1N3ww&ixlib=rb-4.1.0&q=80&w=1080"
+                image: "/Flooring.png"
               },
               {
                 icon: <Building2 className="w-12 h-12" />,
                 title: "Concrete Footings & Foundations",
                 description: "Commercial concrete footings, walls, and foundations engineered for lasting structural integrity on every job.",
-                image: "https://images.unsplash.com/photo-1625337905408-7b6fe970e187?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25jcmV0ZSUyMGZvdW5kYXRpb24lMjBjb25zdHJ1Y3Rpb24lMjBzaXRlfGVufDF8fHx8MTc3MzE1MzM3Mnww&ixlib=rb-4.1.0&q=80&w=1080"
+                image: "/Concretefoundations.png"
               },
               {
                 icon: <ShieldCheck className="w-12 h-12" />,
                 title: "Commercial Parking Lots & Pavement",
                 description: "Commercial pavement, parking lot concrete, curb and gutter, and concrete replacement for businesses across SW Ohio, Northern KY, and SE Indiana.",
-                image: "https://images.unsplash.com/photo-1762537766077-17b2c4de6d9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tZXJjaWFsJTIwYnVpbGRpbmclMjBjb25jcmV0ZSUyMGV4dGVyaW9yfGVufDF8fHx8MTc3MzE2ODA1OXww&ixlib=rb-4.1.0&q=80&w=1080"
+                image: "/kroger.JPG"
               },
             ].map((service, index) => (
               <div key={index} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow group">

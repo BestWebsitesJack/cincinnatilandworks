@@ -47,7 +47,7 @@ export function Services() {
         "ADA-compliant installations",
         "Commercial pavement replacement & restoration"
       ],
-      image: "https://images.unsplash.com/photo-1762537766077-17b2c4de6d9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tZXJjaWFsJTIwYnVpbGRpbmclMjBjb25jcmV0ZSUyMGV4dGVyaW9yfGVufDF8fHx8MTc3MzE2ODA1OXww&ixlib=rb-4.1.0&q=80&w=1080"
+      image: "/kroger.JPG"
     },
     {
       icon: <Settings className="w-12 h-12" />,
@@ -83,7 +83,7 @@ export function Services() {
         "Storm sewer concrete repair",
         "Maintenance contracts available"
       ],
-      image: "https://images.unsplash.com/photo-1772299121503-cd62a57e3a26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tZXJjaWFsJTIwY29uY3JldGUlMjBjb25zdHJ1Y3Rpb24lMjB3YXJlaG91c2V8ZW58MXx8fHwxNzczMTY4MDU3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+      image: "/kroger.JPG"
     }
   ];
 
