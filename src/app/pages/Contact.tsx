@@ -7,7 +7,7 @@ export function Contact() {
         <div className="absolute inset-0 bg-gradient-to-r from-zinc-900/75 via-zinc-900/50 to-zinc-900/10 z-10"></div>
         <div className="absolute inset-0 bg-cover bg-center" style={{backgroundImage: "url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1920&q=80')"}}></div>
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl bg-zinc-900/60 p-8 rounded-lg backdrop-blur-sm">
             <div className="text-[#E8510A] uppercase tracking-wider text-sm mb-4">
               Free Estimate
             </div>
