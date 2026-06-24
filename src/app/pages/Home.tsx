@@ -29,7 +29,7 @@ export function Home() {
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="container mx-auto px-4 relative z-20">
-          <div className="max-w-lg text-white bg-zinc-900/50 p-6 rounded-lg backdrop-blur-sm">
+          <div className="text-white p-6 rounded-lg" style={{maxWidth: "480px", background: "rgba(0,0,0,0.7)"}}>
             <div className="text-[#E8510A] uppercase tracking-wider text-sm mb-4">
               Serving the Cincinnati Tri-State Area — OH, KY & IN
             </div>
