@@ -22,7 +22,7 @@ export function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-[700px] md:h-[700px] flex items-center pt-24 md:pt-0">
+      <section className="relative md:h-[700px] flex items-center py-32 md:py-0">
         <ImageWithFallback
           src="/kroger.JPG"
           alt="Cincinnati Landworks commercial concrete parking lot and sidewalk Kroger Marketplace Cincinnati OH"
