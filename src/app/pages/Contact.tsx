@@ -25,7 +25,7 @@ export function Contact() {
               <div>
                 <div className="text-sm text-zinc-600 mb-1">Call Us</div>
                 <div className="text-2xl">(513) 614-4190</div>
-                <div className="text-sm text-zinc-500 mt-1">Mon-Fri: 8AM-6PM</div>
+                <div className="text-sm text-zinc-500 mt-1">Mon-Fri: 8AM-4PM</div>
               </div>
             </a>
 
@@ -57,7 +57,7 @@ export function Contact() {
               </div>
               <div>
                 <div className="text-sm text-zinc-600 mb-1">Business Hours</div>
-                <div className="text-2xl">Mon-Fri: 8AM-6PM</div>
+                <div className="text-2xl">Mon-Fri: 8AM-4PM</div>
                 <div className="text-sm text-zinc-500 mt-1">Sat-Sun: Closed</div>
               </div>
             </div>
