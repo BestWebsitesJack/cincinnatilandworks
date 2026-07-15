@@ -46,7 +46,7 @@ export function Contact() {
               </div>
               <div>
                 <div className="text-sm text-zinc-600 mb-1">Address</div>
-                <div className="text-2xl">24 Landy Lane, Unit 5D</div>
+                <div className="text-2xl">24 Landy Lane, Unit 4A</div>
                 <div className="text-sm text-zinc-500 mt-1">Reading, OH 45215</div>
               </div>
             </div>

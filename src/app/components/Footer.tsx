@@ -78,7 +78,7 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span className="text-zinc-400">24 Landy Lane, Unit 5D<br />Reading, OH 45215</span>
+                <span className="text-zinc-400">24 Landy Lane, Unit 4A<br />Reading, OH 45215</span>
               </li>
               <li className="flex items-start gap-2">
                 <Clock className="w-4 h-4 mt-0.5 flex-shrink-0" />
