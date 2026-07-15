@@ -72,8 +72,8 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <a href="mailto:michelle@cincinnatilandworks.com" className="text-zinc-400 hover:text-[#E8510A] transition-colors">
-                  michelle@cincinnatilandworks.com
+                <a href="mailto:michele@cincinnatilandworks.com" className="text-zinc-400 hover:text-[#E8510A] transition-colors">
+                  michele@cincinnatilandworks.com
                 </a>
               </li>
               <li className="flex items-start gap-2">
