@@ -18,13 +18,13 @@ export function Contact() {
       <section className="py-20 bg-zinc-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto space-y-6">
-            <a href="tel:5136732888" className="flex items-start gap-4 p-6 bg-white rounded-lg hover:shadow-md transition-shadow group">
+            <a href="tel:5136144190" className="flex items-start gap-4 p-6 bg-white rounded-lg hover:shadow-md transition-shadow group">
               <div className="bg-[#E8510A] text-white p-3 rounded-lg group-hover:bg-[#C8420A] transition-colors">
                 <Phone className="w-6 h-6" />
               </div>
               <div>
                 <div className="text-sm text-zinc-600 mb-1">Call Us</div>
-                <div className="text-2xl">(513) 673-2888</div>
+                <div className="text-2xl">(513) 614-4190</div>
                 <div className="text-sm text-zinc-500 mt-1">Mon-Fri: 8AM-6PM</div>
               </div>
             </a>
