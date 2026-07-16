@@ -100,8 +100,8 @@ export function About() {
               Get Free Estimate
               <ArrowRight className="w-5 h-5" />
             </Link>
-            <a href="tel:5136732888" className="border-2 border-white hover:bg-white hover:text-[#E8510A] text-white px-8 py-4 rounded text-lg inline-flex items-center justify-center transition-colors">
-              Call (513) 673-2888
+            <a href="tel:5136144190" className="border-2 border-white hover:bg-white hover:text-[#E8510A] text-white px-8 py-4 rounded text-lg inline-flex items-center justify-center transition-colors">
+              Call (513) 614-4190
             </a>
           </div>
         </div>
