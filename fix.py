@@ -1,53 +1,130 @@
-services = open('src/app/pages/Services.tsx').read()
-idx = services.find('<section className="relative py-32')
-end = services.find('</section>', idx) + len('</section>')
-new_services_hero = '''<section className="relative h-[400px] flex items-center">
-        <div className="absolute inset-0 z-10" style={{background: "rgba(0,0,0,0.65)"}}></div>
-        <div className="absolute inset-0 bg-cover bg-center" style={{backgroundImage: "url('/services-hero.png')"}}></div>
-        <div className="container mx-auto px-4 relative z-20">
-          <div className="max-w-3xl">
-            <div style={{color: "#E8510A"}} className="uppercase tracking-wider text-sm mb-4">Our Services</div>
-            <h1 className="text-5xl md:text-6xl mb-6" style={{color: "#ffffff"}}>Commercial & Industrial Concrete Services in Cincinnati</h1>
-            <p className="text-xl" style={{color: "#e0e0e0"}}>Cincinnati Landworks provides expert commercial and industrial concrete services across Cincinnati, OH, Northern KY, and SE Indiana. From concrete flatwork and loading docks to parking lot replacement and drainage — 100% commercial focus.</p>
-          </div>
-        </div>
-      </section>'''
-services = services[:idx] + new_services_hero + services[end:]
-open('src/app/pages/Services.tsx', 'w').write(services)
-print("Services done")
+content = open('src/app/pages/Contact.tsx').read()
 
-projects = open('src/app/pages/Projects.tsx').read()
-idx = projects.find('<section className="relative py-32')
-end = projects.find('</section>', idx) + len('</section>')
-new_projects_hero = '''<section className="relative h-[400px] flex items-center">
-        <div className="absolute inset-0 z-10" style={{background: "rgba(0,0,0,0.65)"}}></div>
-        <div className="absolute inset-0 bg-cover bg-center" style={{backgroundImage: "url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80')"}}></div>
-        <div className="container mx-auto px-4 relative z-20">
-          <div className="max-w-3xl">
-            <div style={{color: "#E8510A"}} className="uppercase tracking-wider text-sm mb-4">Who We Serve</div>
-            <h1 className="text-5xl md:text-6xl mb-6" style={{color: "#ffffff"}}>Markets We Serve — Commercial & Industrial Concrete Cincinnati</h1>
-            <p className="text-xl" style={{color: "#e0e0e0"}}>Cincinnati Landworks serves commercial and industrial clients across Ohio, Kentucky, and Indiana. From warehouses and manufacturing plants to retail centers, municipalities, and general contractors — we are the commercial concrete contractor Cincinnati businesses trust.</p>
-          </div>
-        </div>
-      </section>'''
-projects = projects[:idx] + new_projects_hero + projects[end:]
-open('src/app/pages/Projects.tsx', 'w').write(projects)
-print("Projects done")
+old_import = 'import { Phone, Mail, MapPin, Clock } from "lucide-react";'
+new_import = 'import { Phone, Mail, MapPin, Clock, Send, CheckCircle2 } from "lucide-react";\nimport { useState } from "react";'
 
-contact = open('src/app/pages/Contact.tsx').read()
-idx = contact.find('<section className="relative py-32')
-end = contact.find('</section>', idx) + len('</section>')
-new_contact_hero = '''<section className="relative h-[400px] flex items-center">
-        <div className="absolute inset-0 z-10" style={{background: "rgba(0,0,0,0.65)"}}></div>
-        <div className="absolute inset-0 bg-cover bg-center" style={{backgroundImage: "url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1920&q=80')"}}></div>
-        <div className="container mx-auto px-4 relative z-20">
-          <div className="max-w-3xl">
-            <div style={{color: "#E8510A"}} className="uppercase tracking-wider text-sm mb-4">Free Estimate</div>
-            <h1 className="text-5xl md:text-6xl mb-6" style={{color: "#ffffff"}}>Contact Cincinnati Landworks</h1>
-            <p className="text-xl" style={{color: "#e0e0e0"}}>Request a free estimate for your commercial or industrial concrete project in Cincinnati, OH, Northern KY, or SE Indiana. Call or email us directly.</p>
-          </div>
+content = content.replace(old_import, new_import)
+
+old_func = 'export function Contact() {\n  return ('
+new_func = '''export function Contact() {
+  const [formData, setFormData] = useState({
+    name: "", company: "", email: "", phone: "", projectType: "", message: ""
+  });
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: "fb986043-20d3-4ea7-abee-dd5434cc35ba",
+          subject: "New Quote Request — Cincinnati Landworks",
+          from_name: "Cincinnati Landworks Website",
+          ...formData
+        })
+      });
+      const data = await response.json();
+      if (data.success) {
+        setSubmitted(true);
+        setFormData({ name: "", company: "", email: "", phone: "", projectType: "", message: "" });
+      }
+    } catch (err) {
+      console.error(err);
+    }
+    setLoading(false);
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  return ('''
+
+content = content.replace(old_func, new_func)
+
+old_contact_info = '''          <div className="max-w-3xl mx-auto space-y-6">'''
+new_contact_info = '''          <div className="grid lg:grid-cols-2 gap-12">
+            <div className="space-y-6">'''
+
+content = content.replace(old_contact_info, new_contact_info)
+
+form_html = '''
+            </div>
+
+            {/* Contact Form */}
+            <div className="bg-white p-8 rounded-lg shadow-lg">
+              <h2 className="text-3xl mb-6" style={{color: "#1A1A1A"}}>Request a Free Estimate</h2>
+              {submitted ? (
+                <div className="text-center py-12">
+                  <CheckCircle2 className="w-16 h-16 mx-auto mb-4" style={{color: "#2D7D46"}} />
+                  <h3 className="text-2xl mb-2">Thank You!</h3>
+                  <p className="text-zinc-600">We received your request and will be in touch within 24 business hours.</p>
+                </div>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div>
+                      <label className="block text-sm font-medium mb-1">Full Name *</label>
+                      <input type="text" name="name" required value={formData.name} onChange={handleChange} className="w-full px-4 py-3 border border-zinc-300 rounded-lg focus:outline-none focus:ring-2" style={{focusRingColor: "#E8510A"}} placeholder="John Smith" />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium mb-1">Company Name</label>
+                      <input type="text" name="company" value={formData.company} onChange={handleChange} className="w-full px-4 py-3 border border-zinc-300 rounded-lg focus:outline-none focus:ring-2" placeholder="Your Company" />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium mb-1">Email Address *</label>
+                      <input type="email" name="email" required value={formData.email} onChange={handleChange} className="w-full px-4 py-3 border border-zinc-300 rounded-lg focus:outline-none focus:ring-2" placeholder="john@company.com" />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium mb-1">Phone Number *</label>
+                      <input type="tel" name="phone" required value={formData.phone} onChange={handleChange} className="w-full px-4 py-3 border border-zinc-300 rounded-lg focus:outline-none focus:ring-2" placeholder="(513) 000-0000" />
+                    </div>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium mb-1">Project Type *</label>
+                    <select name="projectType" required value={formData.projectType} onChange={handleChange} className="w-full px-4 py-3 border border-zinc-300 rounded-lg focus:outline-none focus:ring-2">
+                      <option value="">Select a project type</option>
+                      <option value="Industrial Warehouse Flooring">Industrial Warehouse Flooring</option>
+                      <option value="Commercial Concrete Footings & Foundations">Commercial Concrete Footings & Foundations</option>
+                      <option value="Commercial Parking Lot & Pavement">Commercial Parking Lot & Pavement</option>
+                      <option value="Loading Dock Installation & Repair">Loading Dock Installation & Repair</option>
+                      <option value="Commercial Flatwork & Sidewalks">Commercial Flatwork & Sidewalks</option>
+                      <option value="Concrete Crack Repair & Replacement">Concrete Crack Repair & Replacement</option>
+                      <option value="Commercial Drainage Systems">Commercial Drainage Systems</option>
+                      <option value="Curb and Gutter">Curb and Gutter</option>
+                      <option value="Concrete Maintenance Contract">Concrete Maintenance Contract</option>
+                      <option value="Other Commercial Concrete">Other Commercial Concrete</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium mb-1">Project Details *</label>
+                    <textarea name="message" required value={formData.message} onChange={handleChange} rows={5} className="w-full px-4 py-3 border border-zinc-300 rounded-lg focus:outline-none focus:ring-2 resize-none" placeholder="Describe your project — location, size, timeline, and any specific requirements..."></textarea>
+                  </div>
+                  <button type="submit" disabled={loading} className="w-full text-white py-4 rounded-lg text-lg font-medium flex items-center justify-center gap-2 transition-colors" style={{background: loading ? "#999" : "#E8510A"}}>
+                    <Send className="w-5 h-5" />
+                    {loading ? "Sending..." : "Request Free Estimate"}
+                  </button>
+                  <p className="text-sm text-zinc-500 text-center">* Required fields. We respond within 24 business hours.</p>
+                </form>
+              )}
+            </div>
+          </div>'''
+
+old_close = '''          </div>
         </div>
-      </section>'''
-contact = contact[:idx] + new_contact_hero + contact[end:]
-open('src/app/pages/Contact.tsx', 'w').write(contact)
-print("Contact done")
+      </section>
+
+      <section className="py-20">'''
+
+content = content.replace(old_close, form_html + '''
+        </div>
+      </section>
+
+      <section className="py-20">''', 1)
+
+open('src/app/pages/Contact.tsx', 'w').write(content)
+print("Done")
