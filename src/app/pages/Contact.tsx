@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export function Contact() {
   const [formData, setFormData] = useState({
-    name: "", company: "", email: "", phone: "", projectType: "", message: ""
+    name: "", email: "", phone: "", subject: "", message: ""
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -17,20 +17,19 @@ export function Contact() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           access_key: "fb986043-20d3-4ea7-abee-dd5434cc35ba",
-          subject: "New Quote Request - Cincinnati Landworks",
-          from_name: "Cincinnati Landworks Website",
+          subject: "New Contact - Cincinnati Landworks: " + formData.subject,
+          from_name: formData.name,
           name: formData.name,
-          company: formData.company,
           email: formData.email,
           phone: formData.phone,
-          projectType: formData.projectType,
+          subject_line: formData.subject,
           message: formData.message
         })
       });
       const data = await response.json();
       if (data.success) {
         setSubmitted(true);
-        setFormData({ name: "", company: "", email: "", phone: "", projectType: "", message: "" });
+        setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
       }
     } catch (err) {
       console.error(err);
@@ -38,7 +37,7 @@ export function Contact() {
     setLoading(false);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
@@ -51,7 +50,7 @@ export function Contact() {
           <div className="max-w-3xl">
             <div className="uppercase tracking-wider text-sm mb-4" style={{color: "#E8510A"}}>Free Estimate</div>
             <h1 className="text-5xl md:text-6xl mb-6" style={{color: "#ffffff"}}>Contact Cincinnati Landworks</h1>
-            <p className="text-xl" style={{color: "#e0e0e0"}}>Request a free estimate for your commercial or industrial concrete project in Cincinnati, OH, Northern KY, or SE Indiana. Call or email us directly.</p>
+            <p className="text-xl" style={{color: "#e0e0e0"}}>Request a free estimate for your commercial or industrial concrete project in Cincinnati, OH, Northern KY, or SE Indiana.</p>
           </div>
         </div>
       </section>
@@ -59,10 +58,9 @@ export function Contact() {
       <section className="py-20 bg-zinc-50">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12">
-
             <div className="space-y-6">
               <h2 className="text-3xl font-bold" style={{color: "#1A1A1A"}}>Contact Information</h2>
-              <a href="tel:5136144190" className="flex items-start gap-4 p-6 bg-white rounded-lg hover:shadow-md transition-shadow group">
+              <a href="tel:5136144190" className="flex items-start gap-4 p-6 bg-white rounded-lg hover:shadow-md transition-shadow">
                 <div className="p-3 rounded-lg text-white" style={{background: "#E8510A"}}>
                   <Phone className="w-6 h-6" />
                 </div>
@@ -72,8 +70,7 @@ export function Contact() {
                   <div className="text-sm text-zinc-500 mt-1">Mon-Fri: 8AM-4PM</div>
                 </div>
               </a>
-
-              <a href="mailto:michele@cincinnatilandworks.com" className="flex items-start gap-4 p-6 bg-white rounded-lg hover:shadow-md transition-shadow group">
+              <a href="mailto:michele@cincinnatilandworks.com" className="flex items-start gap-4 p-6 bg-white rounded-lg hover:shadow-md transition-shadow">
                 <div className="p-3 rounded-lg text-white" style={{background: "#E8510A"}}>
                   <Mail className="w-6 h-6" />
                 </div>
@@ -83,7 +80,6 @@ export function Contact() {
                   <div className="text-sm text-zinc-500 mt-1">We respond within 24 business hours</div>
                 </div>
               </a>
-
               <div className="flex items-start gap-4 p-6 bg-white rounded-lg">
                 <div className="p-3 rounded-lg text-white" style={{background: "#E8510A"}}>
                   <MapPin className="w-6 h-6" />
@@ -94,7 +90,6 @@ export function Contact() {
                   <div className="text-sm text-zinc-500 mt-1">Reading, OH 45215</div>
                 </div>
               </div>
-
               <div className="flex items-start gap-4 p-6 bg-white rounded-lg">
                 <div className="p-3 rounded-lg text-white" style={{background: "#E8510A"}}>
                   <Clock className="w-6 h-6" />
@@ -114,9 +109,9 @@ export function Contact() {
                   <div className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6" style={{background: "#F0FFF4"}}>
                     <CheckCircle2 className="w-10 h-10" style={{color: "#2D7D46"}} />
                   </div>
-                  <h3 className="text-3xl font-bold mb-3" style={{color: "#1A1A1A"}}>Message Sent!</h3>
+                  <h3 className="text-3xl font-bold mb-3">Message Sent!</h3>
                   <p className="text-lg text-zinc-600 mb-2">Thank you for reaching out to Cincinnati Landworks.</p>
-                  <p className="text-zinc-500">A member of our team will contact you within 24 business hours to discuss your project.</p>
+                  <p className="text-zinc-500">A member of our team will contact you within 24 business hours.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">
@@ -126,39 +121,23 @@ export function Contact() {
                       <input type="text" name="name" required value={formData.name} onChange={handleChange} className="w-full px-4 py-3 border border-zinc-300 rounded-lg focus:outline-none" placeholder="John Smith" />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium mb-1">Company Name</label>
-                      <input type="text" name="company" value={formData.company} onChange={handleChange} className="w-full px-4 py-3 border border-zinc-300 rounded-lg focus:outline-none" placeholder="Your Company" />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium mb-1">Email Address *</label>
-                      <input type="email" name="email" required value={formData.email} onChange={handleChange} className="w-full px-4 py-3 border border-zinc-300 rounded-lg focus:outline-none" placeholder="john@company.com" />
-                    </div>
-                    <div>
                       <label className="block text-sm font-medium mb-1">Phone Number *</label>
                       <input type="tel" name="phone" required value={formData.phone} onChange={handleChange} className="w-full px-4 py-3 border border-zinc-300 rounded-lg focus:outline-none" placeholder="(513) 000-0000" />
                     </div>
                   </div>
                   <div>
-                    <label className="block text-sm font-medium mb-1">Project Type *</label>
-                    <select name="projectType" required value={formData.projectType} onChange={handleChange} className="w-full px-4 py-3 border border-zinc-300 rounded-lg focus:outline-none">
-                      <option value="">Select a project type</option>
-                      <option value="Industrial Warehouse Flooring">Industrial Warehouse Flooring</option>
-                      <option value="Commercial Concrete Footings and Foundations">Commercial Concrete Footings and Foundations</option>
-                      <option value="Commercial Parking Lot and Pavement">Commercial Parking Lot and Pavement</option>
-                      <option value="Loading Dock Installation and Repair">Loading Dock Installation and Repair</option>
-                      <option value="Commercial Flatwork and Sidewalks">Commercial Flatwork and Sidewalks</option>
-                      <option value="Concrete Crack Repair and Replacement">Concrete Crack Repair and Replacement</option>
-                      <option value="Commercial Drainage Systems">Commercial Drainage Systems</option>
-                      <option value="Curb and Gutter">Curb and Gutter</option>
-                      <option value="Concrete Maintenance Contract">Concrete Maintenance Contract</option>
-                      <option value="Other Commercial Concrete">Other Commercial Concrete</option>
-                    </select>
+                    <label className="block text-sm font-medium mb-1">Email Address *</label>
+                    <input type="email" name="email" required value={formData.email} onChange={handleChange} className="w-full px-4 py-3 border border-zinc-300 rounded-lg focus:outline-none" placeholder="john@company.com" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium mb-1">Project Details *</label>
-                    <textarea name="message" required value={formData.message} onChange={handleChange} rows={5} className="w-full px-4 py-3 border border-zinc-300 rounded-lg focus:outline-none resize-none" placeholder="Describe your project - location, size, timeline, and any specific requirements..."></textarea>
+                    <label className="block text-sm font-medium mb-1">Subject *</label>
+                    <input type="text" name="subject" required value={formData.subject} onChange={handleChange} className="w-full px-4 py-3 border border-zinc-300 rounded-lg focus:outline-none" placeholder="e.g. Parking lot project, warehouse floor estimate..." />
                   </div>
-                  <button type="submit" disabled={loading} className="w-full text-white py-4 rounded-lg text-lg font-medium flex items-center justify-center gap-2 transition-colors" style={{background: loading ? "#999999" : "#E8510A"}}>
+                  <div>
+                    <label className="block text-sm font-medium mb-1">Message *</label>
+                    <textarea name="message" required value={formData.message} onChange={handleChange} rows={5} className="w-full px-4 py-3 border border-zinc-300 rounded-lg focus:outline-none resize-none" placeholder="Tell us about your project - location, size, timeline, and any specific requirements..."></textarea>
+                  </div>
+                  <button type="submit" disabled={loading} className="w-full text-white py-4 rounded-lg text-lg font-medium flex items-center justify-center gap-2" style={{background: loading ? "#999999" : "#E8510A"}}>
                     <Send className="w-5 h-5" />
                     {loading ? "Submitting..." : "Send Message"}
                   </button>
@@ -166,7 +145,6 @@ export function Contact() {
                 </form>
               )}
             </div>
-
           </div>
         </div>
       </section>
@@ -187,7 +165,7 @@ export function Contact() {
             </div>
             <div className="p-8 rounded-lg text-center text-white" style={{background: "#E8510A"}}>
               <h3 className="text-2xl mb-4">Kentucky</h3>
-              <ul className="space-y-2 text-orange-100">
+              <ul className="space-y-2" style={{color: "#fde8d8"}}>
                 <li>Covington</li><li>Newport</li><li>Florence</li><li>Fort Thomas</li><li>Alexandria</li><li>Highland Heights</li><li>Erlanger</li><li>Boone County</li>
               </ul>
             </div>
