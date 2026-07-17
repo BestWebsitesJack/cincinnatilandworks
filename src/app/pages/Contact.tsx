@@ -103,12 +103,15 @@ export function Contact() {
 
             {/* Contact Form */}
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h2 className="text-3xl mb-6" style={{color: "#1A1A1A"}}>Request a Free Estimate</h2>
+              <h2 className="text-3xl mb-6" style={{color: "#1A1A1A"}}>Get In Touch</h2>
               {submitted ? (
-                <div className="text-center py-12">
-                  <CheckCircle2 className="w-16 h-16 mx-auto mb-4" style={{color: "#2D7D46"}} />
-                  <h3 className="text-2xl mb-2">Thank You!</h3>
-                  <p className="text-zinc-600">We received your request and will be in touch within 24 business hours.</p>
+                <div className="text-center py-16 px-4">
+                  <div className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6" style={{background: "#F0FFF4"}}>
+                    <CheckCircle2 className="w-10 h-10" style={{color: "#2D7D46"}} />
+                  </div>
+                  <h3 className="text-3xl font-bold mb-3" style={{color: "#1A1A1A"}}>Message Sent!</h3>
+                  <p className="text-lg text-zinc-600 mb-2">Thank you for reaching out to Cincinnati Landworks.</p>
+                  <p className="text-zinc-500">A member of our team will contact you within 24 business hours to discuss your project.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">
@@ -152,7 +155,7 @@ export function Contact() {
                   </div>
                   <button type="submit" disabled={loading} className="w-full text-white py-4 rounded-lg text-lg font-medium flex items-center justify-center gap-2 transition-colors" style={{background: loading ? "#999" : "#E8510A"}}>
                     <Send className="w-5 h-5" />
-                    {loading ? "Sending..." : "Request Free Estimate"}
+                    {loading ? "Submitting..." : "Send Message"}
                   </button>
                   <p className="text-sm text-zinc-500 text-center">* Required fields. We respond within 24 business hours.</p>
                 </form>
