@@ -111,7 +111,7 @@ export function Projects() {
           <div className="max-w-3xl">
             <div style={{color: "#E8510A"}} className="uppercase tracking-wider text-sm mb-4">Who We Serve</div>
             <h1 className="text-5xl md:text-6xl mb-6" style={{color: "#ffffff"}}>Markets We Serve — Commercial & Industrial Concrete Cincinnati</h1>
-            <p className="text-xl" style={{color: "#e0e0e0"}}>Cincinnati Landworks serves commercial and industrial clients across Ohio, Kentucky, and Indiana. From warehouses and manufacturing plants to retail centers, municipalities, and general contractors — we are the commercial concrete contractor Cincinnati businesses trust.</p>
+            <p className="text-xl" style={{color: "#e0e0e0"}}>Cincinnati Landworks serves commercial and industrial clients across Ohio, Kentucky, and Indiana. From warehouses and manufacturing plants in Cincinnati to retail centers in Northern Kentucky and industrial facilities in Southeast Indiana — we are the commercial concrete contractor and Cincinnati industrial contractor businesses across the Tri-State area trust.</p>
           </div>
         </div>
       </section>

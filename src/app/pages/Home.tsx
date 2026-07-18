@@ -93,7 +93,7 @@ export function Home() {
               Commercial & Industrial Concrete Services
             </h2>
             <p className="text-xl text-zinc-600 max-w-2xl mx-auto">
-              Specialized commercial concrete solutions for businesses across Cincinnati, OH, KY & IN
+              Trusted concrete contractor serving Cincinnati OH, Northern Kentucky, and SE Indiana — commercial and industrial only
             </p>
           </div>
 

@@ -97,7 +97,7 @@ export function Services() {
           <div className="max-w-3xl">
             <div style={{color: "#E8510A"}} className="uppercase tracking-wider text-sm mb-4">Our Services</div>
             <h1 className="text-5xl md:text-6xl mb-6" style={{color: "#ffffff"}}>Commercial & Industrial Concrete Services in Cincinnati</h1>
-            <p className="text-xl" style={{color: "#e0e0e0"}}>Cincinnati Landworks provides expert commercial and industrial concrete services across Cincinnati, OH, Northern KY, and SE Indiana. From concrete flatwork and loading docks to parking lot replacement and drainage — 100% commercial focus.</p>
+            <p className="text-xl" style={{color: "#e0e0e0"}}>Cincinnati Landworks is a trusted concrete contractor serving Cincinnati OH, Northern KY, and SE Indiana. From concrete flatwork and loading docks to parking lot replacement, commercial sidewalks, and drainage — 100% commercial and industrial focus. Serving Hamilton County, Boone County, and the greater Cincinnati Tri-State area.</p>
           </div>
         </div>
       </section>
