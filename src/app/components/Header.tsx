@@ -23,6 +23,7 @@ export function Header() {
     { path: "/projects", label: "Industries" },
     { path: "/about", label: "About" },
     { path: "/contact", label: "Contact" },
+    { path: "/careers", label: "Careers" },
   ];
 
   return (
