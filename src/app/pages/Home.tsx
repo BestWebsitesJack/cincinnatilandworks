@@ -72,7 +72,7 @@ export function Home() {
             </div>
             <div>
               <div className="text-4xl md:text-5xl mb-2">100%</div>
-              <div className="text-orange-100">Commercial Focus</div>
+              <div className="text-orange-100">All Project Types</div>
             </div>
             <div>
               <div className="text-4xl md:text-5xl mb-2">3</div>
@@ -93,7 +93,7 @@ export function Home() {
               Commercial & Industrial Concrete Services
             </h2>
             <p className="text-xl text-zinc-600 max-w-2xl mx-auto">
-              Trusted concrete contractor serving Cincinnati OH, Northern Kentucky, and SE Indiana — commercial and industrial only
+              Trusted concrete contractor serving Cincinnati OH, Northern Kentucky, and SE Indiana — for businesses, property owners, and homeowners alike
             </p>
           </div>
 
@@ -229,7 +229,7 @@ export function Home() {
               </div>
               <div className="bg-zinc-900 text-white p-8 rounded-lg">
                 <Building2 className="w-12 h-12 text-[#E8510A] mb-4" />
-                <h3 className="text-2xl mb-2">Commercial Focus</h3>
+                <h3 className="text-2xl mb-2">All Project Types</h3>
                 <p className="text-zinc-400">Specialized in large-scale industrial and commercial projects.</p>
               </div>
             </div>
