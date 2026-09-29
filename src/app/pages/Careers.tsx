@@ -38,7 +38,7 @@ export function Careers() {
   return (
     <div>
       <section className="relative h-[400px] flex items-center">
-        <div className="absolute inset-0 z-10" style={{background: "rgba(0,0,0,0.65)"}}></div>
+        
         <div className="absolute inset-0 bg-cover bg-center" style={{backgroundImage: "url('/Commercial_Crane.png')"}}></div>
         <div className="container mx-auto px-4 relative z-20">
           <div className="max-w-3xl">

@@ -44,7 +44,7 @@ export function Contact() {
   return (
     <div>
       <section className="relative h-[400px] flex items-center">
-        <div className="absolute inset-0 z-10" style={{background: "rgba(0,0,0,0.65)"}}></div>
+        
         <div className="absolute inset-0 bg-cover bg-center" style={{backgroundImage: "url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1920&q=80')"}}></div>
         <div className="container mx-auto px-4 relative z-20">
           <div className="max-w-3xl">
