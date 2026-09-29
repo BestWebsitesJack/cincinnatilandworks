@@ -5,7 +5,7 @@ export function About() {
   return (
     <div>
       <section className="relative py-32 flex items-center">
-        <div className="absolute inset-0 bg-gradient-to-r from-zinc-900 via-zinc-900/90 to-zinc-900/70 z-10"></div>
+        
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/Commercial_Crane.png')" }}></div>
         <div className="container mx-auto px-4 relative z-20">
           <div className="max-w-3xl text-white">
