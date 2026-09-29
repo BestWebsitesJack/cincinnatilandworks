@@ -99,7 +99,7 @@ export function Residential() {
         ></div>
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/kroger.JPG')" }}
+          style={{ backgroundImage: "url('/Residential-hero.jpg')" }}
         ></div>
         <div className="container mx-auto px-4 relative z-20">
           <div className="max-w-3xl">
