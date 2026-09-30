@@ -92,11 +92,8 @@ export function Residential() {
 
   return (
     <div>
-      <section className="relative h-[420px] flex items-center">
-        <div
-          className="absolute inset-0 z-10"
-          style={{ background: "rgba(0,0,0,0.60)" }}
-        ></div>
+      <section className="relative h-[630px] flex items-center">
+        
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: "url('/Residential-hero.jpg')" }}
